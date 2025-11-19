@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class SimpleInterest {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter Principal amount:-");
+        double principalAmt = sc.nextDouble();
+
+        System.out.println("Enter Interest rate:-");
+        double interestRate = sc.nextDouble();
+
+        System.out.println("Enter No Of Years:-");
+        double noOfYears = sc.nextDouble();
+
+        double simpleInterest = (principalAmt * interestRate * noOfYears) / 100;
+
+        System.out.printf("%.2f\n", simpleInterest);
+
+        sc.close();
+    }
+}
